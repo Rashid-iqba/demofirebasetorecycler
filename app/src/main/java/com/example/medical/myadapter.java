@@ -98,31 +98,10 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                     });
 
 
-                    holder.delete.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            AlertDialog.Builder builder=new AlertDialog.Builder(holder.img.getContext());
-                            builder.setTitle("Delete Panel");
-                            builder.setMessage("Delete...?");
 
-                            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    FirebaseDatabase.getInstance().getReference().child("students")
-                                            .child(getRef(position).getKey()).removeValue();
-                                }
-                            });
 
-                            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
 
-                                }
-                            });
 
-                            builder.show();
-                        }
-                    });
 
     } // End of OnBindViewMethod
 
@@ -138,7 +117,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
     class myviewholder extends RecyclerView.ViewHolder
     {
         CircleImageView img;
-        ImageView edit,delete;
+        ImageView edit;
         TextView Hospital,pincode,NumofBed,ambulence;
         public myviewholder(@NonNull View itemView)
         {
@@ -150,7 +129,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
             ambulence=(TextView)itemView.findViewById(R.id.ambulencetext);
 
             edit=(ImageView)itemView.findViewById(R.id.editicon);
-            delete=(ImageView)itemView.findViewById(R.id.deleteicon);
+
         }
     }
 }
