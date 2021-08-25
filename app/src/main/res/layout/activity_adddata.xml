@@ -52,13 +52,17 @@
         android:layout_marginBottom="15dp"
         android:id="@+id/add_submit"
         android:textSize="20sp"
-        android:text="Add to Firebase"/>
+        android:textColor="#F4F4F4"
+        android:background="#1E3770"
+        android:text="Add to Database"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/add_back"
         android:textSize="20sp"
+        android:background="#1E3770"
+        android:textColor="#F4F4F4"
         android:text="Back"/>
 
 

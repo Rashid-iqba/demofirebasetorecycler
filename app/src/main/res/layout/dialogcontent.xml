@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Update Content Panel"
-        android:background="@color/colorPrimary"
+        android:background="#1E3770"
         android:textSize="25sp"
         android:gravity="center"
         android:textColor="#fff"/>
@@ -26,7 +26,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="Hospital Name"
         android:id="@+id/uname"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
@@ -34,7 +34,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Course"
+        android:hint="Pincode"
         android:id="@+id/ucourse"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
@@ -42,7 +42,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="Number of Beds"
         android:id="@+id/uemail"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:text="Update"
         android:id="@+id/usubmit"
-        android:background="@color/colorPrimary"
+        android:background="#1E3770"
         android:textColor="#fff"
         android:layout_gravity="center"
         android:textSize="20sp"
