@@ -37,6 +37,35 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:1048571618860:android:b2d3d9af738ff344cd1389",
+        "android_client_info": {
+          "package_name": "com.example.medical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048571618860-f292qll950pd92o4jh2d8prdug913ovh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYPVb4aU7KI5V7RJ3jP5z60n3IRQSTGQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048571618860-f292qll950pd92o4jh2d8prdug913ovh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:1048571618860:android:700b2a632c82677ecd1389",
         "android_client_info": {
           "package_name": "com.example.myappmed"

@@ -1,4 +1,4 @@
-package com.example.demofirebasetorecycler;
+package com.example.medical;
 
 import android.content.Context;
 

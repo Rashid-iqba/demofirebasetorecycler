@@ -1,4 +1,4 @@
-package com.example.demofirebasetorecycler;
+package com.example.medical;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
