@@ -42,6 +42,8 @@
                         android:text="This is Demo Name"
                         android:textColor="#000"
                         android:textSize="25sp"
+
+
                         android:textStyle="bold" />
 
                     <TextView
