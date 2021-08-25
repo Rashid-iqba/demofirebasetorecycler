@@ -38,9 +38,9 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
     @Override
     protected void onBindViewHolder(@NonNull final myviewholder holder, final int position, @NonNull final model model)
     {
-       holder.name.setText(model.getName());
-       holder.course.setText(model.getCourse());
-       holder.email.setText(model.getEmail());
+       holder.Hospital.setText(model.getHospital());
+       holder.pincode.setText(model.getpincode());
+       holder.NumofBed.setText(model.getNumofBed());
        Glide.with(holder.img.getContext()).load(model.getPurl()).into(holder.img);
 
                     holder.edit.setOnClickListener(new View.OnClickListener() {
@@ -53,15 +53,15 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
 
                             View myview=dialogPlus.getHolderView();
                             final EditText purl=myview.findViewById(R.id.uimgurl);
-                            final EditText name=myview.findViewById(R.id.uname);
-                            final EditText course=myview.findViewById(R.id.ucourse);
-                            final EditText email=myview.findViewById(R.id.uemail);
+                            final EditText Hospital=myview.findViewById(R.id.uHospital);
+                            final EditText pincode=myview.findViewById(R.id.upincode);
+                            final EditText NumofBed=myview.findViewById(R.id.uNumofBed);
                             Button submit=myview.findViewById(R.id.usubmit);
 
                             purl.setText(model.getPurl());
-                            name.setText(model.getName());
-                            course.setText(model.getCourse());
-                            email.setText(model.getEmail());
+                            Hospital.setText(model.getHospital());
+                            pincode.setText(model.getpincode());
+                            NumofBed.setText(model.getNumofBed());
 
                             dialogPlus.show();
 
@@ -70,9 +70,9 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                                     public void onClick(View view) {
                                         Map<String,Object> map=new HashMap<>();
                                         map.put("purl",purl.getText().toString());
-                                        map.put("name",name.getText().toString());
-                                        map.put("email",email.getText().toString());
-                                        map.put("course",course.getText().toString());
+                                        map.put("Hospital",Hospital.getText().toString());
+                                        map.put("NumofBed",NumofBed.getText().toString());
+                                        map.put("pincode",pincode.getText().toString());
 
                                         FirebaseDatabase.getInstance().getReference().child("students")
                                                 .child(getRef(position).getKey()).updateChildren(map)
@@ -137,14 +137,14 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
     {
         CircleImageView img;
         ImageView edit,delete;
-        TextView name,course,email;
+        TextView Hospital,pincode,NumofBed;
         public myviewholder(@NonNull View itemView)
         {
             super(itemView);
             img=(CircleImageView) itemView.findViewById(R.id.img1);
-            name=(TextView)itemView.findViewById(R.id.nametext);
-            course=(TextView)itemView.findViewById(R.id.coursetext);
-            email=(TextView)itemView.findViewById(R.id.emailtext);
+            Hospital=(TextView)itemView.findViewById(R.id.Hospitaltext);
+            pincode=(TextView)itemView.findViewById(R.id.pincodetext);
+            NumofBed=(TextView)itemView.findViewById(R.id.NumofBedtext);
 
             edit=(ImageView)itemView.findViewById(R.id.editicon);
             delete=(ImageView)itemView.findViewById(R.id.deleteicon);

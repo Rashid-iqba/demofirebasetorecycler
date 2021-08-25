@@ -12,27 +12,27 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/add_name"
+        android:id="@+id/add_Hospital"
         android:textSize="20sp"
-        android:hint="Your Name"
+        android:hint="Hospital Name"
         android:layout_marginBottom="15dp"
         android:textColor="#000"/>
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/add_course"
+        android:id="@+id/add_pincode"
         android:textSize="20sp"
-        android:hint="Your Course"
+        android:hint="Your Pincode"
         android:layout_marginBottom="15dp"
         android:textColor="#000"/>
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/add_email"
+        android:id="@+id/add_NumofBed"
         android:textSize="20sp"
-        android:hint="Your Email"
+        android:hint="Enter No. of bed"
         android:layout_marginBottom="15dp"
         android:textColor="#000"/>
 
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_purl"
         android:textSize="20sp"
-        android:hint="Profile Image URL"
+        android:hint="Profile Image URL if you have"
         android:layout_marginBottom="15dp"
         android:textColor="#000"/>
 

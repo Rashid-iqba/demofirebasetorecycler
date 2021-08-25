@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Hospital Name"
-        android:id="@+id/uname"
+        android:id="@+id/uHospital"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
 
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Pincode"
-        android:id="@+id/ucourse"
+        android:id="@+id/upincode"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
 
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Number of Beds"
-        android:id="@+id/uemail"
+        android:id="@+id/uNumofBed"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
 

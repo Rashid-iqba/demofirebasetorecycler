@@ -2,40 +2,40 @@ package com.example.medical;
 
 public class model
 {
-  String name,course,email,purl;
+  String Hospital,pincode,NumofBed,purl;
     model()
     {
 
     }
-    public model(String name, String course, String email, String purl) {
-        this.name = name;
-        this.course = course;
-        this.email = email;
+    public model(String Hospital, String pincode, String NumofBed, String purl) {
+        this.Hospital = Hospital;
+        this.pincode = pincode;
+        this.NumofBed = NumofBed;
         this.purl = purl;
     }
 
-    public String getName() {
-        return name;
+    public String getHospital() {
+        return Hospital;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setHospital(String Hospital) {
+        this.Hospital = Hospital;
     }
 
-    public String getCourse() {
-        return course;
+    public String getpincode() {
+        return pincode;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setpincode(String pincode) {
+        this.pincode = pincode;
     }
 
-    public String getEmail() {
-        return email;
+    public String getNumofBed() {
+        return NumofBed;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setNumofBed(String NumofBed) {
+        this.NumofBed = NumofBed;
     }
 
     public String getPurl() {

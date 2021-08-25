@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class adddata extends AppCompatActivity
 {
-   EditText name,course,email,purl;
+   EditText Hospital,pincode,NumofBed,purl;
    Button submit,back;
 
     @Override
@@ -28,9 +28,9 @@ public class adddata extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adddata);
 
-        name=(EditText)findViewById(R.id.add_name);
-        email=(EditText)findViewById(R.id.add_email);
-        course=(EditText)findViewById(R.id.add_course);
+        Hospital=(EditText)findViewById(R.id.add_Hospital);
+        NumofBed=(EditText)findViewById(R.id.add_NumofBed);
+        pincode=(EditText)findViewById(R.id.add_pincode);
         purl=(EditText)findViewById(R.id.add_purl);
 
         back=(Button)findViewById(R.id.add_back);
@@ -54,18 +54,18 @@ public class adddata extends AppCompatActivity
     private void processinsert()
     {
         Map<String,Object> map=new HashMap<>();
-        map.put("name",name.getText().toString());
-        map.put("course",course.getText().toString());
-        map.put("email",email.getText().toString());
+        map.put("Hospital",Hospital.getText().toString());
+        map.put("pincode",pincode.getText().toString());
+        map.put("NumofBed",NumofBed.getText().toString());
         map.put("purl",purl.getText().toString());
         FirebaseDatabase.getInstance().getReference().child("students").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                       name.setText("");
-                       course.setText("");
-                       email.setText("");
+                       Hospital.setText("");
+                       pincode.setText("");
+                       NumofBed.setText("");
                        purl.setText("");
                         Toast.makeText(getApplicationContext(),"Inserted Successfully",Toast.LENGTH_LONG).show();
                     }
