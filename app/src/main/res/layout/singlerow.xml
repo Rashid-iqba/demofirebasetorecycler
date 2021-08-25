@@ -16,61 +16,70 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="109dp"
             android:orientation="horizontal">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_gravity="center_vertical"
-                    android:id="@+id/img1"
-                    app:civ_border_width="2dp"
-                    app:civ_border_color="#FF000000"
-                    />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
 
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="111dp"
-                    android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="111dp"
+                android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/Hospitaltext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="Hosptal Name"
-                        android:textColor="#000"
-                        android:textSize="23sp"
-                        android:drawableLeft="@drawable/ic_hospitalicon"
-
-
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/pincodetext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="This pincode"
-                        android:textColor="#000"
-                        android:drawableLeft="@drawable/ic_pincodeiconblue"
-                        android:textSize="23sp" />
+                <TextView
+                    android:id="@+id/Hospitaltext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_hospitalicon"
+                    android:text="Hosptal Name"
+                    android:textColor="#000"
+                    android:textSize="23sp"
 
 
-                    <TextView
-                        android:id="@+id/NumofBedtext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="Number od bed"
-                        android:textColor="#14ED0D"
-                        android:drawableLeft="@drawable/ic_bedicon"
-                        android:textSize="23sp" />
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pincodetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_pincodeiconblue"
+                    android:text="This pincode"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
 
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/NumofBedtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_bedicon"
+                    android:text="Number od bed"
+                    android:textColor="#14ED0D"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ambulencetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_ambulanceicon"
+                    android:text="Ambulence"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

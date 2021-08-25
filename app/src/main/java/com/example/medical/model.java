@@ -2,7 +2,7 @@ package com.example.medical;
 
 public class model
 {
-  String Hospital,pincode,NumofBed,purl;
+  String Hospital,pincode,NumofBed,ambulence,purl;
     model()
     {
 
@@ -28,6 +28,14 @@ public class model
 
     public void setpincode(String pincode) {
         this.pincode = pincode;
+    }
+
+    public String getAmbulence() {
+        return ambulence;
+    }
+
+    public void setAmulence(String amulence) {
+        this.ambulence = ambulence;
     }
 
     public String getNumofBed() {

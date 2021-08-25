@@ -40,6 +40,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
     {
        holder.Hospital.setText(model.getHospital());
        holder.pincode.setText(model.getpincode());
+        holder.ambulence.setText(model.getAmbulence());
        holder.NumofBed.setText(model.getNumofBed());
        Glide.with(holder.img.getContext()).load(model.getPurl()).into(holder.img);
 
@@ -52,16 +53,17 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                                     .create();
 
                             View myview=dialogPlus.getHolderView();
-                            final EditText purl=myview.findViewById(R.id.uimgurl);
                             final EditText Hospital=myview.findViewById(R.id.uHospital);
                             final EditText pincode=myview.findViewById(R.id.upincode);
+                            final EditText ambulence=myview.findViewById(R.id.uambulence);
                             final EditText NumofBed=myview.findViewById(R.id.uNumofBed);
                             Button submit=myview.findViewById(R.id.usubmit);
 
-                            purl.setText(model.getPurl());
+
                             Hospital.setText(model.getHospital());
                             pincode.setText(model.getpincode());
                             NumofBed.setText(model.getNumofBed());
+                            ambulence.setText(model.getAmbulence());
 
                             dialogPlus.show();
 
@@ -69,10 +71,10 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                                     @Override
                                     public void onClick(View view) {
                                         Map<String,Object> map=new HashMap<>();
-                                        map.put("purl",purl.getText().toString());
                                         map.put("Hospital",Hospital.getText().toString());
                                         map.put("NumofBed",NumofBed.getText().toString());
                                         map.put("pincode",pincode.getText().toString());
+                                        map.put("ambulence",ambulence.getText().toString());
 
                                         FirebaseDatabase.getInstance().getReference().child("students")
                                                 .child(getRef(position).getKey()).updateChildren(map)
@@ -137,7 +139,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
     {
         CircleImageView img;
         ImageView edit,delete;
-        TextView Hospital,pincode,NumofBed;
+        TextView Hospital,pincode,NumofBed,ambulence;
         public myviewholder(@NonNull View itemView)
         {
             super(itemView);
@@ -145,6 +147,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
             Hospital=(TextView)itemView.findViewById(R.id.Hospitaltext);
             pincode=(TextView)itemView.findViewById(R.id.pincodetext);
             NumofBed=(TextView)itemView.findViewById(R.id.NumofBedtext);
+            ambulence=(TextView)itemView.findViewById(R.id.ambulencetext);
 
             edit=(ImageView)itemView.findViewById(R.id.editicon);
             delete=(ImageView)itemView.findViewById(R.id.deleteicon);
