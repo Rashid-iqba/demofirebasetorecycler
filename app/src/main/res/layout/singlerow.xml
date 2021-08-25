@@ -24,7 +24,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center_vertical"
-                android:src="@mipmap/ic_launcher"
+                android:src="@drawable/hospitalbedicon"
                 app:civ_border_color="#FF000000"
                 app:civ_border_width="2dp" />
 
@@ -42,6 +42,7 @@
                     android:text="Hosptal Name"
                     android:textColor="#000"
                     android:textSize="23sp"
+                    android:drawablePadding="10dp"
 
 
                     android:textStyle="bold" />
@@ -54,6 +55,7 @@
                     android:drawableLeft="@drawable/ic_pincodeiconblue"
                     android:text="This pincode"
                     android:textColor="#000"
+                    android:drawablePadding="10dp"
                     android:textSize="20sp" />
 
 
@@ -65,6 +67,7 @@
                     android:drawableLeft="@drawable/ic_bedicon"
                     android:text="Number od bed"
                     android:textColor="#14ED0D"
+                    android:drawablePadding="10dp"
                     android:textSize="20sp" />
 
                 <TextView
@@ -74,6 +77,7 @@
                     android:layout_marginLeft="10dp"
                     android:drawableLeft="@drawable/ic_ambulanceicon"
                     android:text="Ambulence"
+                    android:drawablePadding="10dp"
                     android:textColor="#000"
                     android:textSize="20sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
