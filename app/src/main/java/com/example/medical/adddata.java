@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class adddata extends AppCompatActivity
 {
-   EditText Hospital,pincode,NumofBed,purl;
+   EditText Hospital,pincode,NumofBed;
    Button submit,back;
 
     @Override
@@ -31,7 +31,6 @@ public class adddata extends AppCompatActivity
         Hospital=(EditText)findViewById(R.id.add_Hospital);
         NumofBed=(EditText)findViewById(R.id.add_NumofBed);
         pincode=(EditText)findViewById(R.id.add_pincode);
-        purl=(EditText)findViewById(R.id.add_purl);
 
         back=(Button)findViewById(R.id.add_back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +56,6 @@ public class adddata extends AppCompatActivity
         map.put("Hospital",Hospital.getText().toString());
         map.put("pincode",pincode.getText().toString());
         map.put("NumofBed",NumofBed.getText().toString());
-        map.put("purl",purl.getText().toString());
         FirebaseDatabase.getInstance().getReference().child("information").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -66,7 +64,7 @@ public class adddata extends AppCompatActivity
                        Hospital.setText("");
                        pincode.setText("");
                        NumofBed.setText("");
-                       purl.setText("");
+
                         Toast.makeText(getApplicationContext(),"Inserted Successfully",Toast.LENGTH_LONG).show();
                     }
                 })

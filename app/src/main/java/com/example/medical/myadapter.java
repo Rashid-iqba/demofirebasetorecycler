@@ -42,7 +42,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
        holder.pincode.setText(model.getpincode());
         holder.ambulence.setText(model.getAmbulence());
        holder.NumofBed.setText(model.getNumofBed());
-       Glide.with(holder.img.getContext()).load(model.getPurl()).into(holder.img);
+       Glide.with(holder.img.getContext()).load("https://lh3.googleusercontent.com/fHbZTzqN0hdQ2cb1oJMf1g1qhea8FusFwwzj0PqyC4nPoYNTX0_TFfygvI_VQ97_Iy71CfoCZbPKqmVg_aT5O9wM-cfa3tDH=s1200").into(holder.img);
 
                     holder.edit.setOnClickListener(new View.OnClickListener() {
                         @Override

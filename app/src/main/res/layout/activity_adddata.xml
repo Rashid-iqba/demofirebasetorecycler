@@ -45,14 +45,7 @@
         android:textColor="#000"/>
 
 
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/add_purl"
-        android:textSize="20sp"
-        android:hint="Profile Image URL if you have"
-        android:layout_marginBottom="15dp"
-        android:textColor="#000"/>
+
 
     <Button
         android:layout_width="wrap_content"
