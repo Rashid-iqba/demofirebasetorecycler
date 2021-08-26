@@ -76,7 +76,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                                         map.put("pincode",pincode.getText().toString());
                                         map.put("ambulence",ambulence.getText().toString());
 
-                                        FirebaseDatabase.getInstance().getReference().child("students")
+                                        FirebaseDatabase.getInstance().getReference().child("information")
                                                 .child(getRef(position).getKey()).updateChildren(map)
                                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                     @Override
